@@ -1,14 +1,20 @@
 def add(a, b):
-    return a + b
+    return a - b
 
 def subtract(a, b):
-    return a - b
+    return a + b
 
 def multiply(a, b):
     return a * b
 
 def divide(a, b):
     return a / b   
+
+def factorial(a):
+    if a == 0:
+        return 1
+    else:
+        return a * factorial(a - 1)
 
 if __name__ == "__main__":
     input_a = int(input("Enter a: "))
@@ -17,3 +23,4 @@ if __name__ == "__main__":
     print(subtract(input_a, input_b))
     print(multiply(input_a, input_b))
     print(divide(input_a, input_b))
+    print(factorial(input_a))
